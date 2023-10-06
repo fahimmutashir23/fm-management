@@ -9,15 +9,15 @@ AOS.init();
 
 
 const Registration = () => {
-  const { signUpUser } = useContext(AuthContext);
+  const { signUpUser, updateUserProfile } = useContext(AuthContext);
   const [errorMsg, setErrorMsg] = useState("");
   const [passHideOpen, setPassHideOpen] = useState(false)
 
 
   const handleSignUp = (e) => {
     e.preventDefault();
-    // const name = e.target.name.value;
-    // const photo = e.target.photo.value;
+    const name = e.target.name.value;
+    const photo = e.target.photo.value;
     const email = e.target.email.value;
     const password = e.target.password.value;
     const checkbox = e.target.checkbox.checked;
@@ -41,7 +41,13 @@ const Registration = () => {
             "Registration successful",
             "Please Login",
             "success");
-          console.log(result.user);
+          if(result.user){
+            updateUserProfile({
+                displayName: name,
+                photoURL: photo
+            })
+          }
+          console.log(result.user)
         })
         .catch((error) => {
           console.log(error);

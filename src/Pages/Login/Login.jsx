@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
+import { AiFillEye, AiFillEyeInvisible, AiOutlineGoogle } from "react-icons/ai";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/Provider";
 import Swal from "sweetalert2";
@@ -11,7 +11,7 @@ AOS.init();
 const Login = () => {
   const [passHideOpen, setPassHideOpen] = useState(false);
   const [wrongPassword, setWrongPassword] = useState("");
-  const {signInUser} = useContext(AuthContext);
+  const {signInUser, googleSignIn} = useContext(AuthContext);
   const navigate = useNavigate()
 
   const handleSignIn = (e) => {
@@ -20,19 +20,32 @@ const Login = () => {
     const password = e.target.password.value;
 
     signInUser(email, password)
-    .then(result => {
-        console.log(result.user);
+    .then(() => {
         Swal.fire(
             "Log In successful",
-            "success");
+            "Thank you to login our website",
+            "success"
+            );
         navigate("/")
     })
-    .catch(err=>{
-        console.log(err)
+    .catch(()=>{
         setWrongPassword("Invalid email or password")
     })
     e.target.reset()
   };
+
+  const handleLogInWithSocial = () =>{
+    googleSignIn()
+    .then(()=>{
+        Swal.fire(
+            "Log In successful",
+            "Thank you to login our website",
+            "success"
+            );
+        navigate("/")
+    })
+    
+  }
 
   return (
     <div className="bg-secondary_color py-5 text-primary_color">
@@ -45,7 +58,7 @@ const Login = () => {
           </div>
           <form
             onSubmit={handleSignIn}
-            className="mt-8 px-6 mb-2 w-80 max-w-screen-lg sm:w-96"
+            className="mt-8 px-6  w-80 max-w-screen-lg sm:w-96"
           >
             <div className="mb-4 flex flex-col gap-6">
               <div className="relative h-11 w-full min-w-[200px]">
@@ -97,6 +110,16 @@ const Login = () => {
               </Link>
             </p>
           </form>
+          <div className="px-6 mb-2">
+          <p className="text-center text-secondary_color font-roboto font-bold">or</p>
+          <hr />
+          <div className="mt-2 text-secondary_color flex justify-center items-center">
+            <span className="font-roboto font-bold">Sign in with:</span>
+            <button onClick={handleLogInWithSocial}>
+                <AiOutlineGoogle className="text-3xl text-primary_color ml-5"></AiOutlineGoogle>
+            </button>
+          </div>
+          </div>
         </div>
       </div>
     </div>

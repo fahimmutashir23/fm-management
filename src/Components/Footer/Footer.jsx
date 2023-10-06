@@ -13,6 +13,10 @@ const Footer = () => {
     >
       <footer className="footer p-10 max-w-6xl mx-auto text-primary_color">
         <aside>
+        <div>
+            <p className="text-primary_color text-3xl font-extrabold -mb-2 font-roboto">FM</p>
+            <p className="text-card font-roboto text-lg">Management</p>
+            </div>
           <p>
             ACME Industries Ltd.
             <br />
