@@ -1,0 +1,59 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/Tc5qJJd/austin-distel-rxp-Th-Owu-Vg-E-unsplash.jpg",
+      "event_name": "Annual Leadership Conference",
+      "description": "Join us for our annual leadership conference, where industry experts will share insights on leadership trends and strategies.",
+      "price": "$299.99"
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/tqLnYYy/product-launch.png",
+      "event_name": "Product Launch Gala",
+      "description": "Be the first to witness the unveiling of our latest product in a glamorous gala event featuring live music and fine dining.",
+      "price": "$199.99"
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/qn51Xnj/Tech-Innovation-Summit.jpg",
+      "event_name": "Tech Innovation Summit",
+      "description": "Explore the latest technological advancements and innovations at our annual Tech Innovation Summit.",
+      "price": "$349.99"
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co/ZhX9R7x/Corporate-Wellness-Workshop.jpg",
+      "event_name": "Corporate Wellness Workshop",
+      "description": "Invest in the well-being of your employees with our Corporate Wellness Workshop, focusing on physical and mental health.",
+      "price": "$149.99"
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co/JtXYy3Y/Financial-Strategies-Seminar.jpg",
+      "event_name": "Financial Strategies Seminar",
+      "description": "Gain insights into financial strategies and investment opportunities from renowned experts in the field.",
+      "price": "$249.99"
+    },
+    {
+      "id": 6,
+      "image": "https://i.ibb.co/wC0mkb3/Diversity-and-Inclusion-Symposium.jpg",
+      "event_name": "Diversity and Inclusion Symposium",
+      "description": "Join us in fostering diversity and inclusion in the workplace through panel discussions and workshops.",
+      "price": "$199.99"
+    },
+    {
+      "id": 7,
+      "image": "https://i.ibb.co/ZMRkX8R/Team-Building-Retreat.jpg",
+      "event_name": "Team Building Retreat",
+      "description": "Strengthen your team's bonds and skills in a scenic retreat designed for team building and collaboration.",
+      "price": "$499.99"
+    },
+    {
+      "id": 8,
+      "image": "https://i.ibb.co/kHNBbhM/Sustainability-Summit.jpg",
+      "event_name": "Sustainability Summit",
+      "description": "Learn about sustainable practices and corporate responsibility at our Sustainability Summit.",
+      "price": "$299.99"
+    }
+  ]
+  
