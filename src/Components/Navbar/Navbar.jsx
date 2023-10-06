@@ -1,6 +1,15 @@
-import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../Provider/Provider";
 
 const Navbar = () => {
+
+    const {user, logoutUser} = useContext(AuthContext);
+
+    const handleLogOut =()=>{
+        logoutUser()
+    }
+
   const navItem = (
     <>
       <ul className="flex gap-11">
@@ -13,23 +22,24 @@ const Navbar = () => {
         </li>
         <li>
           <NavLink
-            to="/destination"
+            to="/special"
             className={({ isActive }) => (isActive ? "border-b-2" : " ")}>
             Spacial Service
           </NavLink>
         </li>
         <li>
           <NavLink
-            to="/registration"
+            to="/contact"
             className={({ isActive }) => (isActive ? "border-b-2" : " ")}>
-            Registration
+            Contact
           </NavLink>
         </li>
+        
           <li>
             <NavLink
-              to="/contact"
+              to="/registration"
               className={({ isActive }) => (isActive ? "border-b-2" : " ")}>
-              Contact
+              Registration
             </NavLink>
           </li>
       </ul>
@@ -72,14 +82,19 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="sm:navbar-end">
-            { (
-              <button
-                
-                className="btn px-5 hover:text-primary_color py-2 border-none bg-primary_color rounded-md font-roboto text-secondary_color"
-              >
+            { 
+              user?  <button
+              onClick={handleLogOut}
+              className="btn px-5 hover:text-primary_color py-2 border-none bg-primary_color rounded-md font-roboto text-secondary_color">
+              Log Out
+            </button>:
+              <Link
+                to="/login"
+                className="btn px-5 hover:text-primary_color py-2 border-none bg-primary_color rounded-md font-roboto text-secondary_color">
                 Log in
-              </button>
-            )}
+              </Link>
+              
+            }
         </div>
       </div>
     </div>
