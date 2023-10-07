@@ -94,7 +94,7 @@ const Navbar = () => {
             {navItem}
           </ul>
         </div>
-        <div className="sm:navbar-end flex flex-col md:flex-row">
+        <div className="navbar-end flex flex-col md:flex-row">
             {
                 user && <div className="mr-2">
                 <img src={user?.photoURL} className="rounded-full w-10 h-10" />

@@ -13,7 +13,7 @@ const Banner = () => {
         }}
       >
         <div className="hero-overlay bg-secondary_color bg-opacity-75"></div>
-        <div className="hero-content text-center text-neutral-content">
+        <div className="hero-content text-center p-0 text-neutral-content">
           <div className="" data-aos="zoom-in">
             <h1 className="mb-5 text-5xl  text-white_color font-bold">Welcome to</h1>
             <h1 className="mb-5 text-7xl font-roboto font-bold text-primary_color">FM Management</h1>

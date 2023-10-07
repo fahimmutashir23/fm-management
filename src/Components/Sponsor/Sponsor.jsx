@@ -12,7 +12,7 @@ AOS.init();
 const Sponsor = () => {
     return (
         <div>
-            <div className="flex gap-14 bg-bg_nav_footer rounded-2xl justify-center items-center py-5">
+            <div className="flex flex-wrap gap-14 bg-bg_nav_footer rounded-2xl justify-center items-center py-5">
                 <a href="#" data-aos = "fade-right"><img src={sponsor_1} alt="" className="w-24 hover:scale-[1.75] transition 1s" /></a>  
                 <a href="#" data-aos = "fade-right"><img src={sponsor_2} alt="" className="w-24 hover:scale-[1.75] transition 1s" /></a>  
                 <a href="#" data-aos = "fade-right"><img src={sponsor_3} alt="" className="w-24 hover:scale-[1.75] transition 1s" /></a>  

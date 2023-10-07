@@ -21,9 +21,13 @@ const SupperClients = () => {
     <div>
       <Swiper
         modules={[Navigation, A11y]}
-        spaceBetween={50}
+        
         loop={true}
-        slidesPerView={3}
+        breakpoints={{
+            570: {slidesPerView: 1, spaceBetween: 50},
+            768: {slidesPerView: 1, spaceBetween: 10},
+            1152: {slidesPerView: 3, spaceBetween: 50}
+        }}
       >
         {data?.map((oneData) => (
           <SwiperSlide key={oneData.id} classNameName="p-2">
