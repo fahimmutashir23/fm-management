@@ -8,25 +8,32 @@ export const AuthContext = createContext(null)
 const provider = new GoogleAuthProvider()
 
 const Provider = ({children}) => {
-    const [user, setUser] = useState(null)
+    const [user, setUser] = useState(null);
+    const [loader, setLoader] = useState(true);
+
 
     const signUpUser = (email, password) => {
+        setLoader()
         return createUserWithEmailAndPassword(auth, email, password);
     }
 
     const signInUser = (email, password) => {
+        setLoader()
         return signInWithEmailAndPassword(auth, email, password);
     }
 
     const logoutUser = () =>{
+        setLoader()
         return signOut(auth);
     }
 
     const updateUserProfile = (profile) => {
+        setLoader()
         return updateProfile(auth.currentUser , profile)
     }
 
     const googleSignIn = () =>{
+        setLoader()
         return signInWithPopup(auth, provider)
     }
 
@@ -34,11 +41,12 @@ const Provider = ({children}) => {
     useEffect(()=>{
         const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
             setUser(currentUser)
+            setLoader(false)
         })
         return unSubscribe
     }, [])
 
-    const authUser = {user, signUpUser, updateUserProfile, signInUser, googleSignIn, logoutUser}
+    const authUser = {user, loader, signUpUser, updateUserProfile, signInUser, googleSignIn, logoutUser}
     return (
         <AuthContext.Provider value={authUser}>
             {children}

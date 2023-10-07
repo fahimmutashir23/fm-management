@@ -5,7 +5,7 @@ import { AuthContext } from "../../Provider/Provider";
 const Navbar = () => {
 
     const {user, logoutUser} = useContext(AuthContext);
-
+    
     const handleLogOut =()=>{
         logoutUser()
     }
@@ -25,6 +25,13 @@ const Navbar = () => {
             to="/special"
             className={({ isActive }) => (isActive ? "border-b-2" : " ")}>
             Spacial Service
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/booking"
+            className={({ isActive }) => (isActive ? "border-b-2" : " ")}>
+            Your Booking
           </NavLink>
         </li>
         <li>

@@ -16,7 +16,7 @@ const Home = () => {
           <h1 className="text-4xl font-roboto font-bold text-card">
             Our Services
           </h1>
-          <p className="font-roboto mb-3">We Provide the best services</p>
+          <p className="font-roboto text-white_color mb-3">We Provide the best services</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {
             data.map((oneData) => (<OurService 

@@ -6,6 +6,9 @@ import Registration from "../Pages/Registration/Registration";
 import Contact from "../Pages/Contact/Contact";
 import Special from "../Pages/Special/Special";
 import Login from "../Pages/Login/Login";
+import YourBooking from "../Pages/YourBooking/YourBooking";
+import ServiceDetails from "../Components/ServiceDetails/ServiceDetails";
+import PrivetRoute from "../PrivetRoute/PrivetRoute";
 
 
 const Routers = createBrowserRouter([
@@ -28,12 +31,21 @@ const Routers = createBrowserRouter([
                 element: <Contact></Contact>
             },
             {
-                path: "special",
-                element: <Special></Special>
+                path: "/special",
+                element: <PrivetRoute><Special></Special></PrivetRoute>
             },
             {
                 path: "/login",
                 element: <Login></Login>
+            },
+            {
+                path: "/booking",
+                element: <PrivetRoute><YourBooking></YourBooking></PrivetRoute>
+            },
+            {
+                path: "/details/:id",
+                element: <PrivetRoute><ServiceDetails></ServiceDetails></PrivetRoute>,
+                loader: ()=> fetch('/data.json')
             }
         ]
     }

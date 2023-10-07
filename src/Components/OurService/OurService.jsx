@@ -11,15 +11,15 @@ const OurService = ({ oneData }) => {
   return (
     <div data-aos="flip-up">
       <div>
-        <div className="border-2 border-card rounded-lg shadow">
+        <div className="border-2 bg-bg_nav_footer border-card rounded-lg shadow">
           <div className="">
-            <img src={image} alt="" className="rounded-t-lg h-52 w-full" />
+            <img src={image} alt="" className="rounded-t-lg h-72 w-full" />
           </div>
           <div className="p-5">
               <h1 className="mb-2 text-2xl font-roboto font-bold tracking-tight text-card">
                 {event_name}
               </h1>
-            <p className="mb-3 font-normal font-roboto">
+            <p className="mb-3 text-white_color font-normal font-roboto">
               {description}
             </p>
             <Link to={`/details/${id}`} 

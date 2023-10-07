@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AiFillEye, AiFillEyeInvisible, AiOutlineGoogle } from "react-icons/ai";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/Provider";
@@ -12,8 +12,9 @@ const Login = () => {
   const [passHideOpen, setPassHideOpen] = useState(false);
   const [wrongPassword, setWrongPassword] = useState("");
   const {signInUser, googleSignIn} = useContext(AuthContext);
-  const navigate = useNavigate()
-
+  const navigate = useNavigate();
+  const location = useLocation()
+console.log(location);
   const handleSignIn = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
@@ -26,7 +27,7 @@ const Login = () => {
             "Thank you to login our website",
             "success"
             );
-        navigate("/")
+        navigate(location?.state ? location.state : "/")
     })
     .catch(()=>{
         setWrongPassword("Invalid email or password")
