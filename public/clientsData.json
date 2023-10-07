@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "name": "John Smith",
+      "company": "ABC Corporation",
+      "photo": "https://i.ibb.co/DRDVqrz/windows-N1-YOSWr-XQJE-unsplash.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Daria Pimkina",
+      "company": "XYZ Inc.",
+      "photo": "https://i.ibb.co/yPh0S3H/daria-pimkina-Dj5-Hn-HMtk-H0-unsplash.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Ali-Morshedlou",
+      "company": "Tech Innovators",
+      "photo": "https://i.ibb.co/VqbJGNT/ali-morshedlou-WMD64t-Mfc4k-unsplash.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Sarah Williams",
+      "company": "Global Solutions",
+      "photo": "https://i.ibb.co/kMZ65tW/daria-pimkina-t-Yaccl19-A3-Q-unsplash.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Mimi-Thian",
+      "company": "Data Experts",
+      "photo": "https://i.ibb.co/tH6ytVB/mimi-thian-5-Zn-S3w-K6s-Ug-unsplash.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Emily Taylor",
+      "company": "EcoTech",
+      "photo": "https://i.ibb.co/4KD7wLM/austin-distel-w-D1-LRb9-Oe-Eo-unsplash.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Robert Brown",
+      "company": "Innovate Labs",
+      "photo": "https://i.ibb.co/Z20Jd0w/austin-distel-7uo-Mmz-Pd2-JA-unsplash.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Megan Anderson",
+      "company": "TechGenius Inc.",
+      "photo": "https://i.ibb.co/zRsZ28x/linkedin-sales-solutions-p-At-A8xe-i-VM-unsplash.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Daniel Clark",
+      "company": "Software Innovations",
+      "photo": "https://i.ibb.co/n1zxr63/bruce-mars-8-YG31-Xn4d-Sw-unsplash.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Olivia White",
+      "company": "Tech Innovators",
+      "photo": "https://i.ibb.co/RNbD0N7/linkedin-sales-solutions-w-S73-LE0-Gn-Ks-unsplash.jpg"
+    },
+    {
+      "id": 11,
+      "name": "William Garcia",
+      "company": "Global Solutions",
+      "photo": "https://i.ibb.co/CnsTKgj/michael-dam-m-EZ3-Po-FGs-k-unsplash.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Sophia Martinez",
+      "company": "Data Experts",
+      "photo": "https://i.ibb.co/Vjn1PCY/dragos-gontariu-GH-m-SApo-KO0-unsplash.jpg"
+    }
+  ]
+  
