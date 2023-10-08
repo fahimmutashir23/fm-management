@@ -9,7 +9,7 @@ AOS.init();
 
 
 const Registration = () => {
-  const { signUpUser, updateUserProfile } = useContext(AuthContext);
+  const { signUpUser, updateUserProfile, logoutUser } = useContext(AuthContext);
   const [errorMsg, setErrorMsg] = useState("");
   const [passHideOpen, setPassHideOpen] = useState(false)
   const navigate = useNavigate()
@@ -48,6 +48,7 @@ const Registration = () => {
                 photoURL: photo
             })
           }
+          logoutUser()
           navigate('/login')
         })
         .catch((error) => {

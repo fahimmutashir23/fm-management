@@ -46,7 +46,7 @@ const Special = () => {
                     </svg>
                   </span>
                   <p className="block font-roboto text-base font-normal leading-relaxed text-inherit antialiased">
-                    5 team members
+                  Basic Services
                   </p>
                 </li>
                 <li className="flex items-center gap-4">
@@ -63,7 +63,7 @@ const Special = () => {
                     </svg>
                   </span>
                   <p className="block font-roboto text-base font-normal leading-relaxed text-inherit antialiased">
-                    200+ components
+                  Standard Support
                   </p>
                 </li>
                 <li className="flex items-center gap-4">
@@ -80,7 +80,7 @@ const Special = () => {
                     </svg>
                   </span>
                   <p className="block font-roboto text-base font-normal leading-relaxed text-inherit antialiased">
-                    40+ built-in pages
+                  Access to Resources
                   </p>
                 </li>
                 <li className="flex items-center gap-4">
@@ -114,7 +114,7 @@ const Special = () => {
                     </svg>
                   </span>
                   <p className="block font-roboto text-base font-normal leading-relaxed text-inherit antialiased">
-                    Life time technical support
+                    2 year technical support
                   </p>
                 </li>
               </ul>
@@ -157,7 +157,7 @@ const Special = () => {
                     </svg>
                   </span>
                   <p className="block font-roboto text-base font-normal leading-relaxed text-inherit antialiased">
-                    5 team members
+                  Enhanced Services
                   </p>
                 </li>
                 <li className="flex items-center gap-4">
@@ -174,7 +174,7 @@ const Special = () => {
                     </svg>
                   </span>
                   <p className="block font-roboto text-base font-normal leading-relaxed text-inherit antialiased">
-                    200+ components
+                  Dedicated Support
                   </p>
                 </li>
                 <li className="flex items-center gap-4">
@@ -191,7 +191,7 @@ const Special = () => {
                     </svg>
                   </span>
                   <p className="block font-roboto text-base font-normal leading-relaxed text-inherit antialiased">
-                    40+ built-in pages
+                  Priority Access
                   </p>
                 </li>
                 <li className="flex items-center gap-4">
@@ -208,7 +208,7 @@ const Special = () => {
                     </svg>
                   </span>
                   <p className="block font-roboto text-base font-normal leading-relaxed text-inherit antialiased">
-                    1 year free updates
+                  Customization Event
                   </p>
                 </li>
                 <li className="flex items-center gap-4">
@@ -225,7 +225,7 @@ const Special = () => {
                     </svg>
                   </span>
                   <p className="block font-roboto text-base font-normal leading-relaxed text-inherit antialiased">
-                    Life time technical support
+                    5 year technical support
                   </p>
                 </li>
               </ul>
@@ -268,7 +268,7 @@ const Special = () => {
                     </svg>
                   </span>
                   <p className="block font-roboto text-base font-normal leading-relaxed text-inherit antialiased">
-                    5 team members
+                  Top-Tier Services
                   </p>
                 </li>
                 <li className="flex items-center gap-4">
@@ -285,7 +285,7 @@ const Special = () => {
                     </svg>
                   </span>
                   <p className="block font-roboto text-base font-normal leading-relaxed text-inherit antialiased">
-                    200+ components
+                  VIP Support
                   </p>
                 </li>
                 <li className="flex items-center gap-4">
@@ -302,7 +302,7 @@ const Special = () => {
                     </svg>
                   </span>
                   <p className="block font-roboto text-base font-normal leading-relaxed text-inherit antialiased">
-                    40+ built-in pages
+                  Exclusive Access
                   </p>
                 </li>
                 <li className="flex items-center gap-4">
@@ -319,7 +319,7 @@ const Special = () => {
                     </svg>
                   </span>
                   <p className="block font-roboto text-base font-normal leading-relaxed text-inherit antialiased">
-                    1 year free updates
+                  Custom Solutions
                   </p>
                 </li>
                 <li className="flex items-center gap-4">
