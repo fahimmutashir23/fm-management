@@ -27,7 +27,7 @@ const ServiceDetails = () => {
   return (
     <div className="bg-secondary_color py-10">
       <div className="card lg:card-side bg-bg_nav_footer shadow-xl max-w-6xl mx-auto">
-        <div className="w-1/2">
+        <div className="md:w-1/2">
         <figure>
           <img
             src={details.image}
@@ -36,7 +36,7 @@ const ServiceDetails = () => {
         </figure>
         </div>
 
-        <div className="card-body w-1/2">
+        <div className="card-body md:w-1/2">
           <h2 className="card-title font-roboto text-card text-3xl">{details.event_name}</h2>
           <p className="text-white_color">{details.long_description}</p>   
           <div className="card-actions justify-between">

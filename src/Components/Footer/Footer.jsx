@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="bg-bg_nav_footer py-11"
+    <div className="bg-bg_nav_footer py-7"
     style={{
         backgroundImage: "",
         backgroundSize: 'cover',
@@ -19,7 +19,7 @@ const Footer = () => {
                 <p className="text-card font-roboto text-lg">Management</p>
                 </div>
               <p>
-                ACME Industries Ltd.
+                FM Industries Ltd.
                 <br />
                 Providing reliable tech since 1992
               </p>
@@ -48,6 +48,7 @@ const Footer = () => {
             </nav>
        </div>
       </footer>
+      <p className="font-roboto text-white_color text-center mt-7 text-xs">©FA Management - 2023</p>
     </div>
   );
 };

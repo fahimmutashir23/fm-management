@@ -22,7 +22,7 @@ const SupperClients = () => {
         
         loop={true}
         breakpoints={{
-            570: {slidesPerView: 1, spaceBetween: 50},
+            425: {slidesPerView: 1, spaceBetween: 5},
             768: {slidesPerView: 1, spaceBetween: 10},
             1152: {slidesPerView: 3.5, spaceBetween: 50}
         }}
