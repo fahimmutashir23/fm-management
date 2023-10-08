@@ -8,8 +8,8 @@ export default {
     extend: {},
     colors: {
       primary_color: '#FFE98A',
-      bg_nav_footer: '#61105E',
-      card : '#C84771',
+      bg_nav_footer: '#35155D',
+      card : '#FF8080',
       white_color: '#FFFFFF',
       secondary_color: '#280B45'
     },

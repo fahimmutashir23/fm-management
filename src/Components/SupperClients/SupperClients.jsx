@@ -3,7 +3,6 @@ import { Navigation, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/bundle";
-import { Link } from "react-router-dom";
 import SwiperBtn from "./SwiperBtn";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
@@ -29,8 +28,8 @@ const SupperClients = () => {
         }}
       >
         {data?.map((oneData) => (
-          <SwiperSlide key={oneData.id} classNameName="p-2">
-            <Link classNameName="rounded-2xl relative">
+          <SwiperSlide key={oneData.id} className="p-2">
+            <div className="rounded-2xl relative">
 
               <div className="relative flex md:w-96 flex-col rounded-xl bg-bg_nav_footer bg-clip-border text-primary_color shadow-md hover:scale-[1.05] transition 1s">
                 <div className="relative mx-4 mt-4 h-80 overflow-hidden rounded-xl shadow-lg">
@@ -66,7 +65,7 @@ const SupperClients = () => {
                 </div>
               </div>
               
-            </Link>
+            </div>
           </SwiperSlide>
         ))}
         <SwiperBtn></SwiperBtn>
