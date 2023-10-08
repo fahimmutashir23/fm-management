@@ -1,5 +1,5 @@
 import { AiOutlineMail } from "react-icons/ai";
-import { FaPhone, FaSearchLocation, FaVoicemail } from "react-icons/fa";
+import { FaPhone, FaSearchLocation } from "react-icons/fa";
 
 const Contact = () => {
   return (
