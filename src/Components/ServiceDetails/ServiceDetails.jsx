@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+import { saveLocalStorage } from "../../LocalStorage/localStorage";
+import Swal from "sweetalert2";
 
 const ServiceDetails = () => {
 
@@ -12,6 +14,15 @@ const ServiceDetails = () => {
         const getDetailData = data.find(item=> item?.id === parseInt(paramsId?.id))
         setDetails(getDetailData)
     }, [data, paramsId.id])
+
+    const handleBooking = (id) => {
+        saveLocalStorage(id)
+        Swal.fire(
+          "Get Successfully",
+          "Thank you to buy our service",
+          "success"
+          );
+    }
 
   return (
     <div className="bg-secondary_color py-10">
@@ -30,7 +41,7 @@ const ServiceDetails = () => {
           <p className="text-white_color">{details.long_description}</p>   
           <div className="card-actions justify-between">
             <h1 className="bg-primary_color font-bold p-3 rounded-md font-roboto text-secondary_color">Price: {details.price}</h1>
-            <button className="btn bg-primary_color font-roboto text-secondary_color hover:text-primary_color">Buy Service</button>
+            <button onClick={()=>handleBooking(details.id)} className="btn bg-primary_color font-roboto text-secondary_color hover:text-primary_color">Buy Service</button>
           </div>
         </div>
       </div>

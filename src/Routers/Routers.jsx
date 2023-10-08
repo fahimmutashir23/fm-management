@@ -40,6 +40,7 @@ const Routers = createBrowserRouter([
             },
             {
                 path: "/booking",
+                loader: ()=> fetch('/data.json'),
                 element: <PrivetRoute><YourBooking></YourBooking></PrivetRoute>
             },
             {

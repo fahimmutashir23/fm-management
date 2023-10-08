@@ -9,7 +9,6 @@ import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const SupperClients = () => {
   const [data, setData] = useState();
-  console.log(data);
 
   useEffect(() => {
     fetch("/clientsData.json")
