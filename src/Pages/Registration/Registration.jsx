@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/Provider";
 import Swal from "sweetalert2";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
@@ -12,6 +12,7 @@ const Registration = () => {
   const { signUpUser, updateUserProfile } = useContext(AuthContext);
   const [errorMsg, setErrorMsg] = useState("");
   const [passHideOpen, setPassHideOpen] = useState(false)
+  const navigate = useNavigate()
 
 
   const handleSignUp = (e) => {
@@ -47,7 +48,7 @@ const Registration = () => {
                 photoURL: photo
             })
           }
-          console.log(result.user)
+          navigate('/login')
         })
         .catch((error) => {
           console.log(error);
@@ -59,7 +60,7 @@ const Registration = () => {
   return (
     <div className="bg-secondary_color py-5 text-primary_color">
       <div data-aos="zoom-in" className="flex justify-center items-center">
-        <div className="relative flex flex-col rounded-xl bg-card text-gray-700 shadow-md">
+        <div className="relative flex flex-col rounded-xl bg-bg_nav_footer text-gray-700 shadow-md">
           <div className="bg-primary_color rounded-t-xl">
             <h3 className="font-babe text-7xl font-semibold text-center mt-3 tracking-normal text-secondary_color">
               Sign Up
@@ -187,7 +188,7 @@ const Registration = () => {
               Already have an account?
               <Link
                 to="/login"
-                className="font-medium text-pink-500 transition-colors hover:text-blue-700"
+                className="font-medium ml-2 transition-colors hover:text-white_color"
               >
                 Sign in
               </Link>

@@ -43,7 +43,7 @@ const Login = () => {
             "Thank you to login our website",
             "success"
             );
-        navigate("/")
+          navigate(location?.state ? location.state : "/")
     })
     
   }
@@ -51,7 +51,7 @@ const Login = () => {
   return (
     <div className="bg-secondary_color py-5 text-primary_color">
       <div data-aos="zoom-in" className="flex justify-center items-center">
-        <div className="relative flex flex-col rounded-xl bg-card bg-clip-border text-gray-700 shadow-md">
+        <div className="relative flex flex-col rounded-xl bg-bg_nav_footer bg-clip-border text-gray-700 shadow-md">
           <div className="bg-primary_color rounded-t-xl">
             <h3 className="font-babe text-7xl font-semibold text-center mt-3 tracking-normal text-secondary_color">
               Sign In
@@ -105,19 +105,18 @@ const Login = () => {
               You don not have an account?
               <Link
                 to="/registration"
-                className="font-medium text-pink-500 transition-colors hover:text-blue-700"
-              >
+                className="font-medium ml-2 transition-colors hover:text-white_color">
                 SignUp
               </Link>
             </p>
           </form>
           <div className="px-6 mb-2">
-          <p className="text-center text-secondary_color font-roboto font-bold">or</p>
+          <p className="text-center text-primary_color font-roboto font-bold">or</p>
           <hr />
           <div className="mt-2 text-secondary_color flex justify-center items-center">
-            <span className="font-roboto font-bold">Sign in with:</span>
+            <span className="font-roboto text-primary_color font-bold">Sign in with:</span>
             <button onClick={handleLogInWithSocial}>
-                <AiOutlineGoogle className="text-3xl text-primary_color ml-5"></AiOutlineGoogle>
+                <AiOutlineGoogle className="text-3xl text-primary_color ml-5 transition-colors hover:text-white_color"></AiOutlineGoogle>
             </button>
           </div>
           </div>

@@ -14,11 +14,11 @@ const Special = () => {
     <div className="bg-secondary_color py-10">
       <div className="max-w-6xl mx-auto ">
         <div className=" mb-5">
-          <h1 className="font-roboto text-card font-bold text-4xl text-center">
+          <h1 className="font-roboto text-card font-bold text-2xl md:text-4xl text-center">
             Our Membership System
           </h1>
         </div>
-        <div className="flex flex-col md:flex-row gap-4 justify-evenly">
+        <div className="flex flex-col items-center md:flex-row gap-4 md:justify-evenly">
 
           <div className="relative flex w-full max-w-[20rem] flex-col rounded-xl p-8 shadow-md shadow-card">
             <div className="relative m-0 mb-8 overflow-hidden rounded-none border-b border-white/10 bg-transparent bg-clip-border pb-8 text-center text-gray-700 shadow-none">
