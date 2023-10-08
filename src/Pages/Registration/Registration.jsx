@@ -51,8 +51,8 @@ const Registration = () => {
           logoutUser()
           navigate('/login')
         })
-        .catch((error) => {
-          console.log(error);
+        .catch(() => {
+          setErrorMsg("email already in used")
         });
       e.target.reset();
     }
