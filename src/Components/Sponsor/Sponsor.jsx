@@ -12,13 +12,13 @@ AOS.init();
 const Sponsor = () => {
     return (
         <div>
-            <div className="flex flex-wrap gap-14 bg-bg_nav_footer rounded-2xl justify-center items-center py-5 mx-5">
-                <a href="#" data-aos = "zoom-in"><img src={sponsor_1} alt="" className="w-16 md:w-24 hover:scale-[1.75] transition 1s" /></a>  
-                <a href="#" data-aos = "zoom-in"><img src={sponsor_2} alt="" className="w-16 md:w-24 hover:scale-[1.75] transition 1s" /></a>  
-                <a href="#" data-aos = "zoom-in"><img src={sponsor_3} alt="" className="w-16 md:w-24 hover:scale-[1.75] transition 1s" /></a>  
-                <a href="#" data-aos = "zoom-in"><img src={sponsor_4} alt="" className="w-16 md:w-24 hover:scale-[1.75] transition 1s" /></a>  
-                <a href="#" data-aos = "zoom-in"><img src={sponsor_5} alt="" className="w-16 md:w-24 hover:scale-[1.75] transition 1s" /></a>  
-                <a href="#" data-aos = "zoom-in"><img src={sponsor_6} alt="" className="w-16 md:w-24 hover:scale-[1.75] transition 1s" /></a>  
+            <div className="flex flex-wrap gap-14 bg-bg_nav_footer rounded-2xl justify-center items-center py-5 mx-5 overflow-x-hidden">
+                <a href="#" data-aos = "fade-right"><img src={sponsor_1} alt="" className="w-16 md:w-24 hover:scale-[1.75] transition 1s" /></a>  
+                <a href="#" data-aos = "fade-right"><img src={sponsor_2} alt="" className="w-16 md:w-24 hover:scale-[1.75] transition 1s" /></a>  
+                <a href="#" data-aos = "fade-right"><img src={sponsor_3} alt="" className="w-16 md:w-24 hover:scale-[1.75] transition 1s" /></a>  
+                <a href="#" data-aos = "fade-left"><img src={sponsor_4} alt="" className="w-16 md:w-24 hover:scale-[1.75] transition 1s" /></a>  
+                <a href="#" data-aos = "fade-left"><img src={sponsor_5} alt="" className="w-16 md:w-24 hover:scale-[1.75] transition 1s" /></a>  
+                <a href="#" data-aos = "fade-left"><img src={sponsor_6} alt="" className="w-16 md:w-24 hover:scale-[1.75] transition 1s" /></a>  
             </div>
         </div>
     );

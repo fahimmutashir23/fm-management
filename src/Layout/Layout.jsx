@@ -6,7 +6,7 @@ const Layout = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <div className="absolute top-[69px] w-full">
+      <div>
         <Outlet></Outlet>
         <Footer></Footer>
       </div>
