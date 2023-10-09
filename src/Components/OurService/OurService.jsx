@@ -9,7 +9,7 @@ const OurService = ({ oneData }) => {
   const { id, image, description, event_name } = oneData;
 
   return (
-    <div data-aos="flip-up">
+    <div data-aos="zoom-in">
       <div>
         <div className="border-2 bg-bg_nav_footer border-card rounded-lg shadow">
           <div className="">

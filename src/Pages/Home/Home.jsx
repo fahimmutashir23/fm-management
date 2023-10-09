@@ -14,7 +14,7 @@ const Home = () => {
       </div>
 
       <div className="bg-secondary_color py-4">
-        <div className="max-w-6xl mx-auto text-center">
+        <div className="max-w-6xl mx-3 md:mx-auto text-center">
           <h1 className="text-5xl font-roboto font-bold text-card">
             Our Services
           </h1>
