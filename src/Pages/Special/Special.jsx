@@ -12,7 +12,7 @@ const Special = () => {
 
   return (
     <div className="bg-secondary_color py-10">
-      <div className="max-w-6xl mx-auto ">
+      <div className="max-w-6xl mx-auto mt-20">
         <div className=" mb-5">
           <h1 className="font-roboto text-card font-bold text-2xl md:text-4xl text-center">
             Our Membership System

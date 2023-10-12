@@ -9,7 +9,7 @@ AOS.init();
 
 
 const Registration = () => {
-  const { signUpUser, updateUserProfile, logoutUser } = useContext(AuthContext);
+  const { signUpUser, updateUserProfile, logoutUser, verifiedMail } = useContext(AuthContext);
   const [errorMsg, setErrorMsg] = useState("");
   const [passHideOpen, setPassHideOpen] = useState(false)
   const navigate = useNavigate()
@@ -38,10 +38,13 @@ const Registration = () => {
     } else {
       signUpUser(email, password)
         .then((result) => {
-          Swal.fire(
-            "Registration successful",
-            "Please Login",
-            "success");
+          verifiedMail()
+          .then(() => {
+            Swal.fire(
+              "Registration successful",
+              "verify your email to check your email",
+              "success");
+          })
           if(result.user){
             updateUserProfile({
                 displayName: name,
@@ -60,7 +63,7 @@ const Registration = () => {
 
   return (
     <div className="bg-secondary_color py-5 text-primary_color">
-      <div data-aos="zoom-in" className="flex justify-center items-center">
+      <div data-aos="zoom-in" className="flex justify-center items-center mt-20">
         <div className="relative flex flex-col rounded-xl bg-bg_nav_footer text-gray-700 shadow-md">
           <div className="bg-primary_color rounded-t-xl">
             <h3 className="font-babe text-7xl font-semibold text-center mt-3 tracking-normal text-secondary_color">

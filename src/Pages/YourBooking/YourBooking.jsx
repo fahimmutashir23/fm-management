@@ -24,7 +24,7 @@ const YourBooking = () => {
 
   return (
     <div className="bg-secondary_color py-4">
-      <div className="max-w-6xl mx-auto text-center min-h-screen">
+      <div className="max-w-6xl mx-auto text-center min-h-screen mt-20">
         <h1 className="text-4xl font-roboto font-bold text-card">
           Your booking
         </h1>

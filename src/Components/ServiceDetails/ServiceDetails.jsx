@@ -26,7 +26,7 @@ const ServiceDetails = () => {
 
   return (
     <div className="bg-secondary_color py-10">
-      <div className="card lg:card-side bg-bg_nav_footer shadow-xl max-w-6xl mx-auto">
+      <div className="card lg:card-side mt-20 bg-bg_nav_footer shadow-xl max-w-6xl mx-auto">
         <div className="md:w-1/2">
         <figure>
           <img

@@ -4,7 +4,7 @@ import { FaPhone, FaSearchLocation } from "react-icons/fa";
 const Contact = () => {
   return (
     <div className="bg-secondary_color py-5 text-primary_color">
-      <div data-aos="zoom-in" className="flex justify-center">
+      <div data-aos="zoom-in" className="flex justify-center mt-20">
         <div
           className="relative flex flex-col md:flex-row rounded-xl bg-bg_nav_footer bg-clip-border shadow-md
          w-2/3"

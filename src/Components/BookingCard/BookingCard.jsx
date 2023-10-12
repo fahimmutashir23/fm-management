@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const BookingCard = ({ data }) => {
   return (
-    <div className="bg-secondary_color py-8" data-aos="flip-up">
+    <div className="bg-secondary_color py-8 overflow-x-hidden" data-aos="flip-up">
       <div className="max-w-6xl mx-auto">
         <div className="border-2 bg-bg_nav_footer  border-card rounded-lg shadow">
           <div className="">

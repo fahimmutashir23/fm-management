@@ -11,7 +11,7 @@ AOS.init();
 const Login = () => {
   const [passHideOpen, setPassHideOpen] = useState(false);
   const [wrongPassword, setWrongPassword] = useState("");
-  const {signInUser, googleSignIn} = useContext(AuthContext);
+  const {signInUser, googleSignIn, logoutUser} = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation()
 
@@ -21,13 +21,22 @@ const Login = () => {
     const password = e.target.password.value;
 
     signInUser(email, password)
-    .then(() => {
-        Swal.fire(
-            "Log In successful",
-            "Thank you to login our website",
-            "success"
-            );
-        navigate(location?.state ? location.state : "/")
+    .then((result) => {
+      console.log(result.user);
+      if(result.user?.emailVerified){
+        return Swal.fire(
+          "Log In successful",
+          "Thank you to login our website",
+          "success"
+          ) &&
+          navigate(location?.state ? location.state : "/")
+      } else{
+        return logoutUser() && Swal.fire(
+          "email not verified",
+          "please check email and verify",
+          "error"
+          );
+      }
     })
     .catch(()=>{
         setWrongPassword("Invalid email or password")
@@ -50,7 +59,7 @@ const Login = () => {
 
   return (
     <div className="bg-secondary_color py-5 text-primary_color">
-      <div data-aos="zoom-in" className="flex justify-center items-center">
+      <div data-aos="zoom-in" className="mt-20 flex justify-center items-center">
         <div className="relative flex flex-col rounded-xl bg-bg_nav_footer bg-clip-border text-gray-700 shadow-md">
           <div className="bg-primary_color rounded-t-xl">
             <h3 className="font-babe text-7xl font-semibold text-center mt-3 tracking-normal text-secondary_color">
